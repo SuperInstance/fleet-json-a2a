@@ -1,0 +1,249 @@
+{
+  "$schema": "https://cocapn.ai/schema/fleet-v1.json",
+  "meta": {
+    "id": "cocapn-fleet-spec",
+    "version": "1.0.0",
+    "format": "a2a-native-json",
+    "generated": "2026-04-14T05:40:52.289294",
+    "languages": 9,
+    "purpose": "Complete fleet specification in maximum information density"
+  },
+  "fleet": {
+    "id": "superinstance",
+    "type": "organization",
+    "repos": {
+      "total": 912,
+      "forked_from": "Lucineer",
+      "active": 132
+    },
+    "agents": {
+      "oracle1": {
+        "role": "lighthouse",
+        "host": "oracle-cloud-aarch64",
+        "capabilities": [
+          "architecture",
+          "research",
+          "coordination",
+          "indexing"
+        ]
+      },
+      "jetsonclaw1": {
+        "role": "vessel",
+        "host": "jetson-orin-nano-8gb",
+        "capabilities": [
+          "cuda",
+          "edge-ml",
+          "bare-metal",
+          "conformance"
+        ]
+      },
+      "babel": {
+        "role": "scout",
+        "host": "z-ai-cloud",
+        "capabilities": [
+          "multilingual",
+          "long-running"
+        ]
+      },
+      "navigator": {
+        "role": "integrator",
+        "host": "z-ai-cloud",
+        "capabilities": [
+          "code-archaeology",
+          "testing"
+        ]
+      },
+      "openmanus": {
+        "role": "frontend",
+        "host": "oracle-cloud",
+        "capabilities": [
+          "web-navigation",
+          "readme-improvement"
+        ]
+      }
+    },
+    "protocols": {
+      "i2i": {
+        "type": "git-native",
+        "messages": 20,
+        "async": true
+      },
+      "a2a": {
+        "type": "http-api",
+        "port": 8901,
+        "sync": true
+      },
+      "bottle": {
+        "type": "file-in-repo",
+        "path": "for-fleet/",
+        "discovery": "cron"
+      },
+      "envelope": {
+        "type": "structured-json",
+        "fields": 20
+      }
+    }
+  },
+  "product": {
+    "name": "DeckBoss",
+    "tiers": [
+      {
+        "name": "Pi",
+        "cost_usd": 75,
+        "hardware": "raspberry-pi-4b",
+        "capabilities": [
+          "chat",
+          "navigation",
+          "camera-snap"
+        ]
+      },
+      {
+        "name": "Jetson",
+        "cost_usd": 500,
+        "hardware": "jetson-orin-nano",
+        "capabilities": [
+          "chat",
+          "navigation",
+          "vision-ml",
+          "local-inference"
+        ]
+      },
+      {
+        "name": "Thor",
+        "cost_usd": "custom",
+        "hardware": "custom",
+        "capabilities": [
+          "full-robotics",
+          "multi-unit"
+        ]
+      }
+    ],
+    "market": {
+      "location": "Sitka, Alaska",
+      "target": "commercial_fishing",
+      "distribution": "word_of_mouth"
+    },
+    "cocapn": {
+      "type": "boat-agent",
+      "modules": [
+        "signalk",
+        "digital_twin",
+        "camera",
+        "anomaly",
+        "priority_queue",
+        "chat"
+      ],
+      "white_papers": [
+        "wp-001-forcing-function",
+        "wp-002-crew-as-service",
+        "wp-003-lazy-eval",
+        "wp-004-compiled-agency",
+        "wp-005-bootstrap-bomb",
+        "wp-006-semantic-compiler"
+      ]
+    }
+  },
+  "infrastructure": {
+    "services": [
+      {
+        "name": "keeper",
+        "port": 8900,
+        "role": "monitoring"
+      },
+      {
+        "name": "agent-api",
+        "port": 8901,
+        "role": "agent-communication"
+      },
+      {
+        "name": "holodeck",
+        "port": 7778,
+        "role": "spatial-ui"
+      },
+      {
+        "name": "fleet-app",
+        "port": 8910,
+        "role": "github-webhooks"
+      },
+      {
+        "name": "seed-mcp",
+        "port": 9438,
+        "role": "creative-reasoning"
+      }
+    ],
+    "providers": {
+      "compute": [
+        "z-ai",
+        "groq",
+        "deepseek",
+        "siliconflow",
+        "deepinfra"
+      ],
+      "version_control": "github",
+      "hosting": "oracle-cloud-aarch64"
+    }
+  },
+  "research": {
+    "experiments_completed": 11,
+    "key_findings": [
+      "Lock critical mass >= 7 for consistency",
+      "Cross-model portability 80%",
+      "Wisdom compression >= 82%",
+      "DCS 5.88x specialist improvement",
+      "Lock monotonicity falsified (R7)",
+      "Embedding space IS type system (WP-006)"
+    ],
+    "papers": 6,
+    "total_cost_usd": 0.5
+  },
+  "cultural_builds": {
+    "purpose": "Same system reasoned in 8 maximally distant language traditions + pure JSON",
+    "versions": [
+      {
+        "id": "en",
+        "tradition": "pragmatic-industrial"
+      },
+      {
+        "id": "zh",
+        "tradition": "relational-harmonious"
+      },
+      {
+        "id": "ar",
+        "tradition": "poetic-geometric"
+      },
+      {
+        "id": "ja",
+        "tradition": "craft-perfection"
+      },
+      {
+        "id": "sa",
+        "tradition": "philosophical-precise"
+      },
+      {
+        "id": "la",
+        "tradition": "legalistic-hierarchical"
+      },
+      {
+        "id": "fi",
+        "tradition": "collective-equality"
+      },
+      {
+        "id": "nv",
+        "tradition": "animacy-relational"
+      }
+    ],
+    "synthesis_goal": "After 8 native builds, synthesize universal perspective that transcends any single tradition"
+  },
+  "capabilities_database": {
+    "format": "vector-embedded-json",
+    "entries": 6,
+    "output_modes": [
+      "opcodes",
+      "shared_library",
+      "script",
+      "api_endpoint",
+      "metal"
+    ],
+    "search": "semantic_cosine_similarity"
+  }
+}
